@@ -20,7 +20,7 @@ const ImageData: React.FC<ImageDataProps> = ({ onCountUpdate }) => {
 
   const fetchData = useCallback(async (offset: number, append: boolean) => {
     try {
-      const response = await axios.get('/api/v4/images', {
+      const response = await axios.get('https://api.nekosapi.com/v4/images', {
         params: { limit: PAGE_LIMIT, offset },
         headers: { Accept: 'application/json' },
       });
