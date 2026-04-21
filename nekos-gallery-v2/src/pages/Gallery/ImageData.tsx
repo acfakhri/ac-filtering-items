@@ -20,7 +20,7 @@ const ImageData: React.FC<ImageDataProps> = ({ onCountUpdate }) => {
 
   const fetchData = useCallback(async (offset: number, append: boolean) => {
     try {
-      const response = await axios.get('/api/v4/images', {
+      const response = await axios.get('https://api.nekosapi.com/v4/images', {
         params: { limit: PAGE_LIMIT, offset },
         headers: { Accept: 'application/json' },
       });
@@ -83,7 +83,7 @@ const ImageData: React.FC<ImageDataProps> = ({ onCountUpdate }) => {
           >
             Retry
           </button>
-          <a href="/api/v4/images" target="_blank" rel="noopener noreferrer"
+          <a href="https://api.nekosapi.com/v4/images" target="_blank" rel="noopener noreferrer"
             style={{ padding: '8px 16px', background: 'var(--bg-card)', color: 'var(--text-secondary)', border: '1px solid var(--border)', borderRadius: '8px', fontSize: '13px', textDecoration: 'none' }}>
             Cek API →
           </a>
