@@ -83,7 +83,7 @@ const ImageData: React.FC<ImageDataProps> = ({ onCountUpdate }) => {
           >
             Retry
           </button>
-          <a href="/api/v4/images" target="_blank" rel="noopener noreferrer"
+          <a href="https://api.nekosapi.com/v4/images" target="_blank" rel="noopener noreferrer"
             style={{ padding: '8px 16px', background: 'var(--bg-card)', color: 'var(--text-secondary)', border: '1px solid var(--border)', borderRadius: '8px', fontSize: '13px', textDecoration: 'none' }}>
             Cek API →
           </a>
