@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+export default async function handler(req: any, res: any) {
   const { limit = 40, offset = 0 } = req.query;
 
   try {
