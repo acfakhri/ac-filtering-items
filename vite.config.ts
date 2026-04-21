@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://api.nekosapi.com',
+        target: 'https://api.nekosapi.com/v4/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
