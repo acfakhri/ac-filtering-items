@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ totalCount, filteredCount }) => {
           </div>
           <div>
             <h1 style={{ fontFamily: 'Syne, sans-serif', fontSize: '18px', fontWeight: 700, color: 'var(--text-primary)', letterSpacing: '-0.02em' }}>
-              Nekos Gallery
+              Ac Filtering Apps Gallery
             </h1>
             <p style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '-1px' }}>NekosAPI v4</p>
           </div>
